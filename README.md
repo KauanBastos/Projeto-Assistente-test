@@ -1,5 +1,7 @@
 # Projeto Assistente
-# Assistente Virtual Magalu  Aplicativo de linha de comando para auxiliar tarefas de operação e pós‑login, com comandos de ajuda, hora/data, calculadora, tutor de login (abrir páginas e orientações) e fluxos de consolidação/consulta. Inclui build para executável Windows e instalador Inno Setup com ícone e wizard personalizados.  ## Principais Recursos - Ajuda com lista de comandos - Hora e data atual.
+# Assistente Virtual Magalu  Aplicativo de linha de comando para auxiliar tarefas de operação e pós‑login, com comandos de ajuda, hora/data, calculadora, tutor de login (abrir páginas e orientações) e fluxos de consolidação/consulta. Inclui build para executável Windows e instalador Inno Setup com ícone e wizard personalizados. 
+
+# Principais Recursos - Ajuda com lista de comandos - Hora e data atual.
 - Calculadora segura suportando parênteses e operadores aritméticos - Tutor de login com abertura de URLs e dicas (sinclog) - Logins frequentes: cadastro/consulta por mesa e senhas padrão - Pós‑login: fluxos de consolidação e consultas - Build do executável (.exe) e instalador Windows (Inno Setup)
 - - Ícone e imagens do wizard gerados por script  ## Arquitetura - Entrada principal: `main.py`
   - Instancia skills e inicia REPL; aceita entrada por argumentos de linha de comando. - Núcleo: `assistant/core.py`   - Roteia o texto para a primeira skill cujo `matches` retorna True; loop de execução com “sair/exit/quit”.
